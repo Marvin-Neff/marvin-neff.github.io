@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800, 800i, 900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.box-container {
+  position: relative;
+}
+
+.box-container .product-card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.box-container .product-card .img-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.box-container .product-card:hover .img-box {
+  top: 0%;
+  transform: translateY(-25%);
+}
+
+.box-container .product-card .img-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(20deg);
+  width: 270px;
+}
+
+.box-container .product-card .content-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.box-container .product-card:hover .content-box {
+  height: 210px;
+}
+
+.box-container .product-card .content-box h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.box-container .product-card .content-box .size,
+.box-container .product-card .content-box .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.box-container .product-card:hover .content-box .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .5s;
+}
+
+.box-container .product-card:hover .content-box .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .6s;
+}
+
+.box-container .product-card .content-box .size h3,
+.box-container .product-card .content-box .color h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.box-container .product-card .content-box a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .5s;
+}
+
+.box-container .product-card:hover .content-box a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: .7s;
+}

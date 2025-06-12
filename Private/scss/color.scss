@@ -1,0 +1,21 @@
+:root {
+    --primary: #3d3d3d;
+    --secondary: #999999;
+    --third: #525253;
+    --dark: rgb(34, 34, 34);
+    --light: rgb(239, 239, 239);
+    --opacity: rgba(255, 255, 255, 0.508);
+}
+
+.color-primary {color: var(--primary)}
+.bg-primary {background-color: var(--primary)}
+.color-secondary {color: var(--secondary)}
+.bg-secondary {background-color: var(--secondary)}
+.color-third {color: var(--third)}
+.bg-third {background-color: var(--third)}
+.bg-opacity {background-color: var(--opacity)}
+
+.color-dark {color: var(--dark)}
+.bg-dark {background-color: var(--dark)}
+.color-light {color: var(--light)}
+.bg-light {background-color: var(--light)}

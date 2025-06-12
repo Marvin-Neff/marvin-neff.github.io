@@ -1,0 +1,76 @@
+.hover-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid #000000;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.top-section img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  transition: transform 0.5s ease-in-out;
+  display: block;
+}
+
+.hover-card:hover .top-section img {
+  transform: translateY(-85px);
+}
+
+.title-wrapper {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: black;
+  transition: transform 0.5s ease-in-out;
+  z-index: 3;
+}
+
+.hover-card:hover .title-wrapper {
+  transform: translateY(-120px);
+}
+
+.hover-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  transform: translateY(120px);
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hover-card:hover .hover-details {
+  transform: translateY(0);
+}
+
+.hover-details p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
